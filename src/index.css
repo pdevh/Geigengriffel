@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --wood-dark: #3e2723;
+  --wood-light: #5d4037;
+  --paper: #f4ebd0;
+  --gold: #d4af37;
+  --font-music: 'Noto Music', 'Bravura', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  background-image:
+    radial-gradient(circle at 50% 50%, #2a1b15 0%, #000000 100%);
+  color: #f5f5f5;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.paper-texture {
+  background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' opacity='0.5'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.wood-texture {
+  background:
+    repeating-linear-gradient(45deg,
+      #2e1a12,
+      #2e1a12 10px,
+      #3b2216 10px,
+      #3b2216 20px);
+}
+
+.font-music {
+  font-family: var(--font-music);
+}
